@@ -1,0 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Kumbh+Sans:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Shadows+Into+Light&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Montserrat", "Helvetica Neue";
+  height: 100vh;
+  overflow: hidden;
+  background-image: linear-gradient(rgb(106, 88, 106), rgb(101, 69, 74));
+}
