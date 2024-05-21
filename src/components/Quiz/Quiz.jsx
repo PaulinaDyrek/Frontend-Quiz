@@ -2,6 +2,7 @@ import { useRef, useState } from "react";
 import { data } from "../../assets/data";
 import "../../components/Quiz/Quiz.css";
 import { Button } from "../Button/Button";
+import { ListItem } from "../List/ListItem";
 
 export function Quiz() {
   let [index, setIndex] = useState(0);
@@ -66,7 +67,12 @@ export function Quiz() {
             {index + 1}. {question.question}
           </h2>
           <ul>
-            <li
+            <ListItem
+              refProp={Option1}
+              onClick={(e) => checkAns(e, 1)}
+              option={question.option1}
+            ></ListItem>
+            {/* <li ZMIENIC RESZTE
               ref={Option1}
               onClick={(e) => {
                 checkAns(e, 1);
@@ -74,7 +80,7 @@ export function Quiz() {
               className="flex items-center h-[45px] pl-[15px] border-[1px] border-white divide-solid rounded-[10px] text-5 cursor cursor-pointer m-2"
             >
               {question.option1}
-            </li>
+            </li> */}
             <li
               ref={Option2}
               onClick={(e) => {
