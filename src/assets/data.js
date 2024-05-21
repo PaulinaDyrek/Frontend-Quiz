@@ -165,7 +165,7 @@ export const data = [
         option2:"useEffect",
         option3: "useReducer",
         option4: "useContext",
-        ans: ,
+        ans: 1,
     },
     
 ]
