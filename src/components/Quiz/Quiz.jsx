@@ -56,8 +56,10 @@ export function Quiz() {
     setResult(false);
   };
   return (
-    <div className="w-[540px] h-full m-auto mt-[50px] flex flex-col bg-brown text-grey gap-5 rounded-[10px] py-10 px-[50px]">
-      <h1 className="text-[27px] font-bold m-auto ">Frontend Developer Quiz</h1>
+    <div className="sm: w-[380px] h-[570px] lg:w-[480px] lg:h-full m-auto mt-[50px] flex flex-col bg-brown text-grey gap-5 rounded-[10px] py-10 px-[50px]">
+      <h1 className="sm: text-[20px] lg:text-[27px] font-bold m-auto ">
+        Frontend Developer Quiz
+      </h1>
       <hr className="h-0.5 bg-grey" />
       {result ? (
         <></>
