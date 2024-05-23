@@ -72,42 +72,21 @@ export function Quiz() {
               onClick={(e) => checkAns(e, 1)}
               option={question.option1}
             ></ListItem>
-            {/* <li ZMIENIC RESZTE
-              ref={Option1}
-              onClick={(e) => {
-                checkAns(e, 1);
-              }}
-              className="flex items-center h-[45px] pl-[15px] border-[1px] border-white divide-solid rounded-[10px] text-5 cursor cursor-pointer m-2"
-            >
-              {question.option1}
-            </li> */}
-            <li
-              ref={Option2}
-              onClick={(e) => {
-                checkAns(e, 2);
-              }}
-              className="flex items-center h-[45px] pl-[15px] border-[1px] border-white divide-solid rounded-[10px] text-5 cursor cursor-pointer  m-2"
-            >
-              {question.option2}
-            </li>
-            <li
-              ref={Option3}
-              onClick={(e) => {
-                checkAns(e, 3);
-              }}
-              className="flex items-center h-[45px] pl-[15px] border-[1px] border-white divide-solid rounded-[10px] text-5 cursor cursor-pointer  m-2"
-            >
-              {question.option3}
-            </li>
-            <li
-              ref={Option4}
-              onClick={(e) => {
-                checkAns(e, 4);
-              }}
-              className="flex items-center h-[45px] pl-[15px] border-[1px] border-white divide-solid rounded-[10px] text-5 cursor cursor-pointer  m-2"
-            >
-              {question.option4}
-            </li>
+            <ListItem
+              refProp={Option2}
+              onClick={(e) => checkAns(e, 2)}
+              option={question.option2}
+            ></ListItem>
+            <ListItem
+              refProp={Option3}
+              onClick={(e) => checkAns(e, 3)}
+              option={question.option3}
+            ></ListItem>
+            <ListItem
+              refProp={Option4}
+              onClick={(e) => checkAns(e, 4)}
+              option={question.option4}
+            ></ListItem>
           </ul>
           <Button onClick={next}>Next</Button>
           <div className="text-[14px] m-auto">
@@ -121,12 +100,6 @@ export function Quiz() {
             You scored {score} out of {data.length}
           </h2>
           <Button onClick={reset}>Reset</Button>
-          {/* <button
-            onClick={reset}
-            className="m-auto w-[200px] h-[45px] bg-lavenda  text-grey text-[20px] font-medium rounded-[8px] cursor-pointer"
-          >
-            Reset
-          </button> */}
         </>
       ) : (
         <></>
