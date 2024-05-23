@@ -3,7 +3,7 @@ export function Button({ onClick, children }) {
     <>
       <button
         onClick={onClick}
-        className="m-auto w-[200px] h-[45px] bg-lavenda  text-grey text-[20px] font-medium rounded-[8px] cursor-pointer"
+        className="m-auto w-[200px] h-[45px] bg-ocean  text-grey text-[20px] font-medium rounded-[8px] cursor-pointer"
       >
         {children}
       </button>
