@@ -12,5 +12,5 @@ body {
   font-family: "Montserrat", "Helvetica Neue";
   height: 100vh;
   overflow: hidden;
-  background-image: linear-gradient(rgb(106, 88, 106), rgb(101, 69, 74));
+  background: rgb(106, 88, 106);
 }
